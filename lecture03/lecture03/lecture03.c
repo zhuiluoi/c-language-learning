@@ -406,26 +406,35 @@ When encountering characters that are not in the set, the matching will stop.*/
 //    return 0;
 //}
 
+//#include <stdio.h>
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	if (a > 0)
+//	{
+//		printf("positive\n");
+//	}
+//	if (a < 0)
+//	{
+//		printf("negative\n");
+//	}
+//	if (a % 2 == 0)
+//	{
+//		printf("even\n");
+//	}
+//	if (a % 2 != 0)
+//	{
+//		printf("odd\n");
+//	}
+//	return 0;
+//}
+
 #include <stdio.h>
-int main()
-{
-	int a = 0;
-	scanf("%d", &a);
-	if (a > 0)
-	{
-		printf("positive\n");
-	}
-	if (a < 0)
-	{
-		printf("negative\n");
-	}
-	if (a % 2 == 0)
-	{
-		printf("even\n");
-	}
-	if (a % 2 != 0)
-	{
-		printf("odd\n");
-	}
-	return 0;
+
+int main() {
+    char a[] = { 73, 32, 99, 97, 110, 32, 100, 111, 32, 105, 116 , 33 ,'\0'};
+    for (int i = 0; a[i]; i++) {
+        printf("%c", a[i]);
+    }
 }

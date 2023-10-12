@@ -286,4 +286,122 @@ When encountering characters that are not in the set, the matching will stop.*/
 //	return 0;
 //}
 
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b, c;
+//	a = 5; // a = 5
+//	c = ++a; //c=5+1=6 a=6
+//	b = ++c, c++, ++a, a++;//b=7 c=7, c=8, a=7, a=8;
+//	b += a++ + c; //b = 7 + 8 + 8 = 23, a=9 , c=8
+//	printf("a = %d b = %d c = %d\n:", a, b, c);
+//	return 0;
+//}
+//#include <stdio.h>
+//int main() {
+//    int a, b;
+//    while (scanf("%d %d", &a, &b) != EOF)
+//    {
+//        if (a == b) {
+//            printf("%d=%d\n", a, b);
+//        }
+//        else if (a > b) {
+//            printf("%d>%d\n", a, b);
+//        }
+//        else {
+//            printf("%d<%d\n", a, b);
+//        }
+//
+//    }
+//    return 0;
+//
+//}
 
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	for (int i = 1; i < 101; i++)
+//	{
+//		if (i % 3 == 0)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int a, b, c;
+//	scanf("%d %d %d", &a, &b, &c);
+//	if (a > b)
+//	{
+//		if (a > c)
+//		{
+//			if (b > c)
+//			{
+//				printf("%d %d %d", a, b, c);
+//			}
+//			else
+//			{
+//				printf("%d %d %d", a, c, b);
+//			}
+//		}
+//		else
+//		{
+//			printf("%d %d %d", c, a, b);
+//		}
+//	}
+//	else
+//	{
+//		if (b < c)
+//		{
+//			printf("%d %d %d", c, b, a);
+//		}
+//		else
+//		{
+//			if (a < c)
+//			{
+//				printf("%d %d %d", b, c, a);
+//			}
+//			else
+//			{
+//				printf("%d %d %d", b, a, c);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a < b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    if (b < c) {
+        int temp = b;
+        b = c;
+        c = temp;
+    }
+
+    if (a < b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    printf("%d %d %d", a, b, c);
+
+    return 0;
+}

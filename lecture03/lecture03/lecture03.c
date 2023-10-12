@@ -377,31 +377,55 @@ When encountering characters that are not in the set, the matching will stop.*/
 //	return 0;
 //}
 
+//#include <stdio.h>
+//
+//int main() {
+//    int a, b, c;
+//    scanf("%d %d %d", &a, &b, &c);
+//
+//    if (a < b) {
+//        int temp = a;
+//        a = b;
+//        b = temp;
+//    }
+//
+//    if (b < c) {
+//        int temp = b;
+//        b = c;
+//        c = temp;
+//    }
+//
+//    if (a < b) {
+//        int temp = a;
+//        a = b;
+//        b = temp;
+//    }
+//
+//    printf("%d %d %d", a, b, c);
+//
+//    return 0;
+//}
+
 #include <stdio.h>
-
-int main() {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-
-    if (a < b) {
-        int temp = a;
-        a = b;
-        b = temp;
-    }
-
-    if (b < c) {
-        int temp = b;
-        b = c;
-        c = temp;
-    }
-
-    if (a < b) {
-        int temp = a;
-        a = b;
-        b = temp;
-    }
-
-    printf("%d %d %d", a, b, c);
-
-    return 0;
+int main()
+{
+	int a = 0;
+	scanf("%d", &a);
+	if (a > 0)
+	{
+		printf("positive\n");
+	}
+	if (a < 0)
+	{
+		printf("negative\n");
+	}
+	if (a % 2 == 0)
+	{
+		printf("even\n");
+	}
+	if (a % 2 != 0)
+	{
+		printf("odd\n");
+	}
+	return 0;
 }

@@ -207,23 +207,41 @@ default: statement
 //	return 0;
 //}
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int func(int a)
+//{
+//    int b;
+//    switch (a)
+//    {
+//    case 1: b = 30;
+//    case 2: b = 20;
+//    case 3: b = 16;
+//    default: b = 0;
+//    }
+//    return b;
+//}
+//
+//int main()
+//{
+//    printf("%d", func(1));
+//
+//}
 
-int func(int a)
-{
-    int b;
-    switch (a)
-    {
-    case 1: b = 30;
-    case 2: b = 20;
-    case 3: b = 16;
-    default: b = 0;
-    }
-    return b;
-}
+#include <stdio.h>
 
 int main()
 {
-    printf("%d", func(1));
+	int a, b, c, max;
+	printf("xxxxxxxxxxxx;");
+	scanf("%d %d %d", &a, &b, &c);
+	if (a > b)
+		max = a;
+	else
+		max = b;
+	if (max < c)
+		max = c;
 
+	printf("%d", max);
+	return 0;
 }

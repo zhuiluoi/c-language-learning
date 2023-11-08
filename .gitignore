@@ -35,6 +35,7 @@ Release/
 *.rc
 *.res
 *private.h
+.vscode/
 
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`

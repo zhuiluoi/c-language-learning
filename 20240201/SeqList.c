@@ -109,7 +109,7 @@ void SLErase(SL* ps, int pos)
     ps->size--;
 };
 
-int SLFind(SL* ps, SLDataType x)
+/* int SLFind(SL* ps, SLDataType x)
 {
     for (int i = 0; i < ps->size; i++)
     {
@@ -120,4 +120,4 @@ int SLFind(SL* ps, SLDataType x)
         
     }
     return -1;
-};
+}; */

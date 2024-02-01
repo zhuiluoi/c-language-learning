@@ -1,4 +1,4 @@
-#include "SeqList.h"
+/* #include "SeqList.h"
 #include <windows.h>
 
 void slTest01()
@@ -9,11 +9,6 @@ void slTest01()
     SLPushBack(&sl, 2);
     SLPushBack(&sl, 3);
     SLPushBack(&sl, 4);
-    /* SLPushFront(&sl, 5);
-    SLPushFront(&sl, 6);
-    SLPushFront(&sl, 7);
-    SLPopBack(&sl);
-    SLPopFront(&sl); */
     SLInsert(&sl, 3, 5);
     SLErase(&sl, 3);
     SLPrint(&sl);
@@ -45,4 +40,4 @@ int main()
     slTest01();
     slTest02();
     return 0;
-}
+} */

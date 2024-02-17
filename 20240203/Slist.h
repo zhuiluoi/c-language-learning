@@ -1,12 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<assert.h>
+#include"Contact.h"
+#include <string.h>
 
-typedef int SLTDataType;
+typedef struct PersonInfo SLTDataType;
 
 typedef struct SListNode
 {
-    int data;
+    SLTDataType data;
     struct SListNode* next;
 }SLTNode;
 

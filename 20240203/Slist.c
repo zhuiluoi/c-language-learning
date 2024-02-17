@@ -95,7 +95,7 @@ void SLTPopFront(SLTNode** pphead)
     prev = NULL;
 };
 
-SLTNode* SLTFind(SLTNode* phead, SLTDataType x)
+/* SLTNode* SLTFind(SLTNode* phead, SLTDataType x)
 {
     assert(phead);
     while (phead)
@@ -108,7 +108,7 @@ SLTNode* SLTFind(SLTNode* phead, SLTDataType x)
     }
     return NULL;
 };
-
+ */
 void SLTInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x)
 {
     assert(pphead);
